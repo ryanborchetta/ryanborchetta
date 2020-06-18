@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Borchetta</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script>
+        if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            document.write("<link rel='stylesheet' href='style/home_mobile.css'>");
+        }
+        else {
+            document.write("<link rel='stylesheet' href='style/home.css'>");
+        }
+    </script>
+</head>
+<body>
+<div id="topcontainer">
+    <div id="innercontainer">
+        <img src="Assets/logo-transparent.png" alt="RB" id="mainlogo">
+        <p id="name">Ryan Borchetta</p>
+        <script>
+            function name() {
+        let size = .135 * (document.querySelector("#mainlogo").clientHeight);
+        document.querySelector("#name").style.fontSize = size + "px";
+        }
+        name();
+        window.addEventListener("resize", function(){name();});
+        </script>
+    </div>
+</div>
+<div id="maincontainer">
+    <div id="selector">
+        <div class="pager">
+            <span class="texter selectedpager" id="port">Portfolios</span>
+        </div>
+        <div class="pager">
+            <span class="texter" id="skills">Resume</span>
+        </div>
+        <div class="pager">
+            <span class="texter" id="about">About Me</span>
+        </div>
+        <img src="Assets/arrow%20down.png" alt="arrow" id="arrowdown">
+        <hr id="fold">
+    </div>
+    <div id="lowercontainer">
+        <script>
+            function movedown() {
+                let num = document.querySelector("#topcontainer").clientHeight + 300;
+                console.log(document.querySelector("#topcontainer").clientHeight);
+                window.scrollTo(0,num);
+                console.log("bored");
+            }
+            document.querySelector("#arrowdown").addEventListener("click", function(){movedown();});
+        </script>
+        <div id="abovefold">
+            <h1 id="title2">Portfolios</h1>
+        </div>
+        <div id="belowfold">
+        </div>
+    </div>
+    <script>
+        function colors(id) {
+            document.querySelector("#port").classList.remove("selectedpager");
+            document.querySelector("#skills").classList.remove("selectedpager");
+            document.querySelector("#about").classList.remove("selectedpager");
+            document.querySelector(id).classList.add("selectedpager");
+        }
+
+        function ports() {
+            document.querySelector("#title2").innerHTML = "Portfolios";
+            document.querySelector("#belowfold").innerHTML = `
+            <div class="port" id="port1">
+                <a href="DigitalPort"><img src="Assets/port1.jpg" alt="UI/UX"></a>
+                <h2>Digital Product</h2>
+            </div>
+            <div class="port" id="port2">
+                <a href="PhysicalPort"><img src="Assets/port2.jpg" alt="Physical Product"></a>
+                <h2>Physical Product</h2>
+            </div>
+            <div class="port" id="port3">
+                <a href="GraphicPort"><img src="Assets/port3.jpg" alt="Graphic Design"></a>
+                <h2>Graphic Design</h2>
+            </div>
+            <div class="port" id="port4">
+                <a href="ProjectsPort"><img src="Assets/port4.jpg" alt="Other"></a>
+                <h2>Other Projects</h2>
+            </div>
+        `;
+        }
+
+        function res() {
+            document.querySelector("#title2").innerHTML = "Resume";
+            document.querySelector("#belowfold").innerHTML = `
+            <iframe src="Assets/Borchetta_Resume.pdf"></iframe>
+        `;
+        }
+
+        function aboutMe() {
+            document.querySelector("#title2").innerHTML = "About Me";
+            document.querySelector("#belowfold").innerHTML = `
+            <div class="abt">
+                <h1>Who am I?</h1>
+                    <div id="who">
+                        <p>
+                            I am a builder; a maker; a creator; a wannabe explorer.  I am defined by those things
+                            which inspire me:  Noble pursuits made up of equal parts bravery, insanity, and genius that advance
+                            humanity forward.
+                        </p>
+                        <p>
+                            "The only way to do great work is to love what you do.  If you haven't found it yet, keep
+                            looking.  Don't settle."<br>
+                            <div id="quote">-Steve Jobs</div>
+                        </p>
+                    </div>
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>Tel: (661) 803-1578</li>
+                    <li>Email: borchett@usc.edu</li>
+                </ul>
+                <h2>Education</h2>
+                <ul>
+                    <li>University of Southern California<br>
+                    Iovine and Young Academy
+                    </li>
+                    <li>Loyola High School of Los Angeles</li>
+                </ul>
+
+            </div>
+        `;
+        }
+
+        document.querySelector("#port").addEventListener("click", function(){
+            colors("#port");
+            document.querySelector("#belowfold").classList.replace("show", "hide");
+            ports();
+            document.querySelector("#belowfold").classList.replace("hide", "show");
+        });
+
+        document.querySelector("#skills").addEventListener("click", function(){
+            colors("#skills");
+            document.querySelector("#belowfold").classList.replace("show", "hide");
+            res();
+            document.querySelector("#belowfold").classList.replace("hide", "show");
+        });
+
+        document.querySelector("#about").addEventListener("click", function(){
+            colors("#about");
+            document.querySelector("#belowfold").classList.replace("show", "hide");
+            aboutMe();
+            document.querySelector("#belowfold").classList.replace("hide", "show");
+        });
+
+        ports();
+    </script>
+</div>
+<div id="footer">
+    <img src="Assets/logo-transparent.png" alt="RB">
+</div>
+</body>
+</html>

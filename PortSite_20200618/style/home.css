@@ -1,0 +1,287 @@
+@media (min-width: 1200px) {
+    #topcontainer {
+        color: white;
+        background-color: black;
+        height: calc(100vh - 300px);
+        max-height: 80vh;
+        width: 100vw;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #topcontainer p {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #innercontainer {
+        margin: auto;
+    }
+
+    #mainlogo {
+        height: calc(.4 * (100vh - 200px));
+        max-height: calc(.4 * (80vh));
+    }
+
+    #selector {
+        height: 300px;
+        min-height: 20vh;
+        width: 80%;
+        max-width: 120vh;
+        margin: auto;
+    }
+
+    .pager {
+        width: calc(100% / 3);
+        font-size: xx-large;
+        text-align: center;
+        float: left;
+        line-height: 130px;
+    }
+
+    .texter {
+        transition: color 150ms ease-in;
+        color: black;
+        user-select: none;
+    }
+
+    .texter:hover {
+        cursor: pointer;
+        transition: color 150ms ease-out;
+        color: red
+    }
+
+    .selectedpager {
+        transition: color 150ms ease-out;
+        color: red;
+    }
+
+    #arrowdown {
+        width: 65px;
+        opacity: .6;
+        margin-top: -20px;
+    }
+
+    #arrowdown:hover {
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #title2 {
+        margin-bottom: 40px;
+    }
+
+    #fold {
+        margin-top: 30px
+    }
+
+    #abovefold {
+        margin: auto;
+        margin-top: -80px;
+    }
+
+    #belowfold {
+        width: 1100px;
+        margin: 10px auto;
+        min-height: 1000px;
+    }
+
+    .port {
+        margin: 25px;
+        width: 500px;
+        float: left;
+    }
+
+    .port img {
+        transition: all 200ms ease;
+        width: 400px;
+        margin: 0 50px;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+
+    .port img:hover {
+        transition: all 200ms ease;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: -2px;
+        margin-bottom: 2px;
+    }
+
+    iframe {
+        padding: 0;
+        border: none;
+        margin: auto;
+        width: 80%;
+        height: 1150px;
+    }
+
+    #footer {
+        margin-top: 100px;
+    }
+
+    .abt {
+        width: 70%;
+        text-align: left;
+        margin: auto;
+    }
+
+    .abt p {
+        font-size: larger;
+        margin-left: 30px;
+    }
+
+    #quote {
+        text-align: right;
+        font-style: italic;
+        font-size: larger;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #topcontainer {
+        color: white;
+        background-color: black;
+        height: calc(100vh - 300px);
+        max-height: 80vh;
+        width: 100vw;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    #topcontainer p {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #innercontainer {
+        margin: auto;
+    }
+
+    #mainlogo {
+        height: calc(.4*(100vh - 200px));
+        max-height: calc(.4*(80vh));
+    }
+
+    #selector {
+        height: 300px;
+        min-height: 20vh;
+        width: 80%;
+        max-width: 120vh;
+        margin: auto;
+    }
+
+    .pager {
+        width: calc(100% / 3);
+        font-size: xx-large;
+        text-align: center;
+        float: left;
+        line-height: 130px;
+    }
+
+    .texter {
+        transition: color 150ms ease-in;
+        color: black;
+        user-select: none;
+    }
+
+    .texter:hover {
+        cursor: pointer;
+        transition: color 150ms ease-out;
+        color: red
+    }
+
+    .selectedpager {
+        transition: color 150ms ease-out;
+        color: red;
+    }
+
+    #arrowdown {
+        width: 65px;
+        opacity: .6;
+        margin-top: -20px;
+    }
+
+    #arrowdown:hover {
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    #title2 {
+        margin-bottom: 40px;
+    }
+
+    #fold {
+        margin-top: 30px
+    }
+
+    #abovefold {
+        margin: auto;
+        margin-top: -80px;
+    }
+
+    #belowfold {
+        width: 100%;
+        margin: 10px auto;
+        min-height: 1000px;
+    }
+    .port {
+        margin: 75px auto;
+        width: 700px;
+    }
+
+    .port img {
+        transition: none;
+        width: 550px;
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+
+    .port img:hover {
+        transition: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    iframe {
+        padding: 0;
+        border: none;
+        margin: auto;
+        width: 70%;
+        height: 1000px;
+    }
+
+    #footer {
+        margin-top: 100px;
+    }
+
+    .abt {
+        width: 70%;
+        text-align: left;
+        margin: auto;
+    }
+
+    .abt p {
+        font-size: larger;
+        margin-left: 30px;
+    }
+
+    #quote {
+        text-align: right;
+        font-style: italic;
+        font-size: larger;
+        margin-right: 15px;
+    }
+}

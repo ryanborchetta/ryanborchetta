@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physical Product</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <script>
+        if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            document.write("<link rel='stylesheet' href='../style/portfolio_mobile.css'>");
+        }
+        else {
+            document.write("<link rel='stylesheet' href='../style/portfolio.css'>");
+        }
+    </script>
+</head>
+<body>
+<div id="topbar">
+    <a href="../website.html"><img src="../Assets/logo-transparent.png" alt="RB" id="mainlogo"></a>
+</div>
+<div id="maincontainer">
+    <h1>Physical Product Design</h1>
+    <hr>
+    <div class="project">
+        <h2>Formula SAE Uprights</h2>
+        <p>
+            This is a showcase of my Fall 2019 design project for the USC Racing's 2020 Formula SAE car.  I was tasked with
+            redesigning the uprights, which are the components that link the wheel package and breaks to the suspension.
+            The uprights are a critical component that have to be engineered to exact specifications while minimizing
+            weight. The uprights for the 2020 car required a major redesign in order to accommodate a new 10" wheel package (down from
+            13" previously).
+        </p>
+        <div class="block">
+            <img src="../Assets/Uprights/1.jpg" alt="upright 1" class="pic">
+            <div class="text">
+                <p>
+                    Seen here are the front (top) and rear (bottom) 2019 components.  They had to be completely redesigned in order to accommodate the
+                    much smaller wheel package. This provided numerous opportunities to optimize the design in order to
+                    shave off precious weight.  A direct translation of this design to a smaller package was put through
+                    finite element analysis (FEA), which revealed it was overbuilt for our expected load case.
+                </p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="../Assets/Uprights/2.jpg" alt="upright 2" class="pic">
+            <div class="text">
+                <p>
+                    These were the first iteration of a more streamlined design concept.  They were approximately 25%
+                    lighter than the original design concept.  These early versions were used to validate the fundamental
+                    design concepts under estimated loading scenario.
+                </p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="../Assets/Uprights/3.jpg" alt="upright 3" class="pic">
+            <div class="text">
+                <p>
+                    These are the final designs for the uprights.  These versions integrated the calculate suspension
+                    mounting points as well as additional weight saving measures.  They are approximately 40% lighter
+                    than the old design concept, and significantly less than half the weight of the 2019 components.
+                    Also shown are some of the FEA simulations that were used to validate the designs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <img src="../Assets/logo-transparent.png" alt="RB">
+</div>
+</body>
+</html>

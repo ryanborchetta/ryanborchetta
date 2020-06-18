@@ -1,0 +1,50 @@
+#topbar {
+    background-color: black;
+    height: 300px;
+}
+
+#mainlogo {
+    margin: 20px auto;
+    height: 260px;
+}
+
+#maincontainer {
+    width: 80%;
+    max-width: 120vh;
+    margin: auto;
+    min-height: calc(100vh - 401px);
+    padding-top: 1px;
+}
+
+.project {
+    text-align: left;
+    width: 85%;
+    margin: auto;
+}
+
+.block {
+    margin:  30px auto;
+    display: block;
+}
+
+.pic {
+    margin-top: 20px;
+    background-color: grey;
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text {
+    width: 100%;
+    margin: 15px auto;
+}
+
+p {
+    font-size: large;
+}
+
+#footer {
+
+}

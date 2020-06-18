@@ -1,0 +1,9 @@
+@media (min-width: 1200px) {
+    h2 {
+        font-style: italic;
+    }
+
+    .block {
+        height: 600px;
+    }
+}

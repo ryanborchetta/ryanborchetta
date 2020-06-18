@@ -1,0 +1,83 @@
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-Regular.otf");
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-RegularItalic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-BoldItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-BlackItalic.otf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-BlackItalic.otf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-Semibold.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: NewYork_Large;
+    src: url("../Fonts/NY/NewYorkLarge-Semibold.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: NewYork_Large, serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+
+#footer img {
+    height: 80px;
+    margin-top: 10px;
+    position: absolute;
+    left: calc(50% - 35px);
+}
